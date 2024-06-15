@@ -24,11 +24,9 @@ header{
     color: white;
 }
 .navlist{
-    display: none !important;
+    display: flex; /* Display flex untuk tampilan desktop */
 }
-.navlist.active {
-    display: flex !important;
-}.navlist a{
+.navlist a{
     color: white;
     margin-left: 60px;
     font-size: 15px;
@@ -44,7 +42,7 @@ header{
     font-size: 35px;
     z-index: 10001;
     cursor: pointer;
-    display: none;
+    display: none; /* Display none untuk tampilan desktop */
 }
 
 .Timindo{
@@ -62,6 +60,7 @@ section{
 
 .sejarahtim{
     display: flex;
+    gap: 3rem;
 }
 .coach{
     display: flex;
@@ -204,18 +203,18 @@ tr:nth-child(even) {
         width: 300px;
         height: 40vh;
         background: #ffb8b8;
-        display: flex;
+        display: none; /* Display none untuk tampilan mobile */
         align-items: center;
         flex-direction: column;
         padding: 50px 20px;
         transition: all .55s ease;
     }
+    .navlist.active {
+        display: flex !important; /* Display flex ketika burger menu aktif */
+    }
     .navlist a{
         margin-left: 0;
         display: block;
         margin: 7px 0;
-    }
-    .navlist opem{
-        right: 0;
     }
 }

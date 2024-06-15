@@ -5,4 +5,4 @@ document.addEventListener('DOMContentLoaded', function() {
     menuIcon.addEventListener('click', function() {
         navlist.classList.toggle('active');
     });
-});
+}); 

@@ -24,7 +24,7 @@ header{
     color: white;
 }
 .navlist{
-    display: none !important;
+    display: flex;
 }
 .navlist.active {
     display: flex !important;
@@ -139,7 +139,7 @@ section{
         width: 300px;
         height: 40vh;
         background: #ffb8b8;
-        display: flex;
+        display: none;
         align-items: center;
         flex-direction: column;
         padding: 50px 20px;
@@ -157,4 +157,4 @@ section{
 
 .club{
     width: 25px;
-}
+} 

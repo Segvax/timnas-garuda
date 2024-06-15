@@ -1,6 +1,8 @@
-const menuIcon = document.getElementById('menu-icon');
-const navlist = document.querySelector('.navlist');
+document.addEventListener('DOMContentLoaded', function() {
+    const menuIcon = document.getElementById('menu-icon');
+    const navlist = document.querySelector('.navlist');
 
-menuIcon.addEventListener('click', () => {
-    navlist.classList.toggle('active');
+    menuIcon.addEventListener('click', function() {
+        navlist.classList.toggle('active');
+    });
 });

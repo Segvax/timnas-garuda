@@ -1,12 +1,13 @@
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
     list-style: none;
-    text-decoration: none ;
+    text-decoration: none;
 }
-header{
+
+header {
     position: fixed;
     right: 0;
     top: 0;
@@ -14,20 +15,22 @@ header{
     width: 100%;
     display: flex;
     align-items: center;
-    justify-content:space-between ;
+    justify-content: space-between;
     padding: 33px 9%;
-    background:linear-gradient(245.59deg, #fa4343ea 0%,   #ff0000de 28.53%, #e91515c8 75.52%);
+    background: linear-gradient(245.59deg, #fa4343ea 0%, #ff0000de 28.53%, #e91515c8 75.52%);
 }
 
-.logo{
+.logo {
     font-size: 30px;
     font-weight: 700;
     color: white;
 }
-.navlist{
+
+.navlist {
     display: flex;
 }
-.navlist a{
+
+.navlist a {
     color: white;
     margin-left: 60px;
     font-size: 15px;
@@ -35,10 +38,12 @@ header{
     border-bottom: 2px solid transparent;
     transition: all .55s ease;
 }
-.navlist a:hover{
+
+.navlist a:hover {
     border-bottom: 2px solid white;
 }
-#menu-icon{
+
+#menu-icon {
     color: white;
     font-size: 35px;
     z-index: 10001;
@@ -46,50 +51,57 @@ header{
     display: none;
 }
 
-.Timindo{
+.Timindo {
     height: 100%;
     width: 100%;
-    min-height: 100;
-    background: linear-gradient(245.59deg, #fa4343ea 0%,   #ff0000de 28.53%, #e91515c8 75.52%);
+    min-height: 100vh;
+    background: linear-gradient(245.59deg, #fa4343ea 0%, #ff0000de 28.53%, #e91515c8 75.52%);
     position: absolute;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
     gap: 2rem;
 }
-section{
+
+section {
     padding: 0 19%;
 }
-.Timindo-text h5{
+
+.Timindo-text h5 {
     font-size: 14px;
     font-weight: 400;
     color: white;
     margin-bottom: 40px;
 }
-.Timindo-text h1{
+
+.Timindo-text h1 {
     font-family: "Permanent Marker", cursive;
     font-size: 90px;
     line-height: 1;
     color: white;
     margin: 0 0 45px;
 }
-.Timindo-text h4{
+
+.Timindo-text h4 {
     font-size: 18px;
     font-weight: 600;
     color: white;
     margin-bottom: 10px;
 }
-.Timindo-text p{
+
+.Timindo-text p {
     color: white;
     font-size: 15px;
     line-height: 1.9;
     margin-bottom: 40px;
 }
-.Timindo-img img{
+
+.Timindo-img img {
     width: 700px;
     height: auto;
 }
-.Timindo-text a{
+
+.Timindo-text a {
     display: inline-block;
     color: white;
     background: #f82222;
@@ -100,133 +112,142 @@ section{
     font-weight: 500;
     border-radius: 30px;
     text-transform: uppercase;
-    transition: all.55s ease;
+    transition: all .55s ease;
 }
-.Timindo-text a:hover{
+
+.Timindo-text a:hover {
     background: transparent;
     border: 1px solid white;
     transform: translateY(-15px);
 }
-.Timindo-text a.ctaa{
+
+.Timindo-text a.ctaa {
     background: transparent;
     border: 1px solid white;
     margin-left: 20px;
 }
-.Timindo-text a.ctaa i{
+
+.Timindo-text a.ctaa i {
     vertical-align: middle;
     margin-right: 5px;
 }
 
-.icons{
+.icons {
     position: absolute;
     top: 50%;
     padding: 0 9%;
     transform: translateY(-50%);
 }
-.icons i{
+
+.icons i {
     display: block;
     margin: 20px 0;
     font-size: 24px;
     color: white;
-    transition: all .50s ease ;
+    transition: all .50s ease;
 }
-.icons i:hover{
+
+.icons i:hover {
     color: #ffb8b8;
     transform: translateY(-5px);
 }
 
-@media (max-width: 1535px){
-    header{
+/* Responsive */
+@media (max-width: 1535px) {
+    header {
         padding: 15px 3%;
         transition: 2s;
     }
-    .icons{
+    .icons {
         padding: 0 3%;
         transition: .2s;
     }
-    .scroll-down{
+    .scroll-down {
         right: 3%;
-        transition: .2sk  ;
+        transition: .2s;
     }
 }
-@media (max-width: 1460px){
-    section{
+
+@media (max-width: 1460px) {
+    section {
         padding: 0 12%;
-        transition: .2sll;
+        transition: .2s;
     }
 }
-@media (max-width: 1340px){
-    .Timindo-img img{
+
+@media (max-width: 1340px) {
+    .Timindo-img img {
         width: 100%;
         height: auto;
     }
-    .Timindo-text h1{
-    font-size: 75px;
-    margin: 0 0 30px;
+    .Timindo-text h1 {
+        font-size: 75px;
+        margin: 0 0 30px;
     }
-    .Timindo-text h5{
+    .Timindo-text h5 {
         margin-bottom: 25px;
     }
 }
-@media (max-width: 1195px){
-    section{
+
+@media (max-width: 1195px) {
+    section {
         padding: 0 3%;
         transition: .2s;
     }
-    .Timindo-text{
+    .Timindo-text {
         padding-top: 115px;
     }
-    .Timindo-img{
+    .Timindo-img {
         text-align: center;
     }
-    .Timindo-img img{
+    .Timindo-img img {
         width: 560px;
         height: auto;
     }
-    .Timindo{
+    .Timindo {
         height: 100%;
         gap: 1rem;
-        grid-template-columns: 1frl;
+        display: flex;
+        flex-direction: column;
     }
-    .icons{
+    .icons {
         display: none;
     }
-    .scroll-down{
+    .scroll-down {
         display: none;
     }
 }
 
-@media (max-width: 990px){
-    #menu-icon{
+@media (max-width: 990px) {
+    #menu-icon {
         display: block;
     }
-    .navlist{
+    .navlist {
+        display: none;
         position: absolute;
         top: 100%;
         right: 0;
         width: 300px;
         height: 40vh;
         background: #ffb8b8;
-        display: flex;
         align-items: center;
         flex-direction: column;
         padding: 50px 20px;
         transition: all .55s ease;
     }
-    .navlist a{
+    .navlist.active {
+        display: flex !important;
+    }
+    .navlist a {
         margin-left: 0;
         display: block;
         margin: 7px 0;
     }
-    .navlist opem{
-        right: 0;
-    }
 }
 
-@media (max-width: 689px){
-    .Timindo-img img{
+@media (max-width: 689px) {
+    .Timindo-img img {
         width: 100%;
         height: auto;
     }
 }
-

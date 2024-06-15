@@ -7,4 +7,3 @@ document.addEventListener('DOMContentLoaded', function() {
         navlist.classList.toggle('active');
     });
 });
-

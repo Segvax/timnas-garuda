@@ -24,7 +24,10 @@ header{
     color: white;
 }
 .navlist{
-    display: flex;
+    display: none !important;
+}
+.navlist.active {
+    display: flex !important;
 }
 .navlist a{
     color: white;
@@ -93,3 +96,44 @@ section{
         flex-direction: column;
     }
 }
+@media (max-width: 1535px){
+    header{
+        padding: 15px 3%;
+        transition: 2s;
+    }
+    .icons{
+        padding: 0 3%;
+        transition: .2s;
+    }
+    .scroll-down{
+        right: 3%;
+        transition: .2sk  ;
+    }
+}
+@media (max-width: 990px){
+    #menu-icon{
+        display: block;
+    }
+    .navlist{
+        position: absolute;
+        top: 100%;
+        right: 0;
+        width: 300px;
+        height: 40vh;
+        background: #ffb8b8;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        padding: 50px 20px;
+        transition: all .55s ease;
+    }
+    .navlist a{
+        margin-left: 0;
+        display: block;
+        margin: 7px 0;
+    }
+    .navlist opem{
+        right: 0;
+    }
+}
+

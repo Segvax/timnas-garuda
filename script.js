@@ -1,10 +1,12 @@
-let menu = document.querySelector('#menu-icon');
-let navlist = document.querySelector('.navlist');
 
-menu.onclick = () => {
-    menu.classlist.toggle('bx-x')
-    navlist.classlist.toggle('bx-x')
-};
+document.addEventListener('DOMContentLoaded', function() {
+    const menuIcon = document.getElementById('menu-icon');
+    const navlist = document.querySelector('.navlist');
+
+    menuIcon.addEventListener('click', function() {
+        navlist.classList.toggle('active');
+    });
+});
 
 const sr = ScrollReveal ({
     distance: '65px',

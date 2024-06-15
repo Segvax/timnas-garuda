@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timnas Indonesia</title>
+
+    <link rel="stylesheet" type="text/css" href="Ulasan.css">
+    
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Poppins:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head> 
+<body>
+    <header>
+        <a href="#" class="logo">TIMNAS INDONESIA</a>
+
+        <ul class="navlist">
+            <li><a href="index.html">Beranda</a></li>
+            <li><a href="Tentang.Html">Tentang</a></li>
+            <li><a href="Galeri.html">Galeri</a></li>
+            <li><a href="Pemain.html">Pemain</a></li>
+            <li><a href="Ulasan.html">Ulasan</a></li>
+        </ul>
+
+        <div class="bx bx-menu" id="menu-icon"></div>
+    </header>
+
+    <section class="Timindo" id="timindo">
+        <form action="#" method="post" class="review-form">
+            <div class="form-group">
+                <label for="nama">Nama:</label>
+                <input type="text" id="nama" name="nama" required>
+            </div>
+            <div class="form-group">
+                <label for="Usia">Usia</label>
+                <select id="Usia" name="Usia">
+                    <option value="#">-18</option>
+                    <option value="#">19-25</option>
+                    <option value="#">26-40</option>
+                    <option value="#">41+</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="Q1">Seberapa sering Anda mengikuti pertandingan Timnas Indonesia?</label>
+                <div class="radio1">
+                    <label><input type="radio" name="Q1" value="1"> 1</label>
+                    <label><input type="radio" name="Q1" value="2"> 2</label>
+                    <label><input type="radio" name="Q1" value="3"> 3</label>
+                    <label><input type="radio" name="Q1" value="4"> 4</label>
+                    <label><input type="radio" name="Q1" value="5"> 5</label>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="favourite">Pemain Favorit:</label>
+                <div class="pemain">
+                    <div>
+                        <label><input type="checkbox" name="favourite" value="pemain1"> Thom Haye</label>
+                        <label><input type="checkbox" name="favourite" value="pemain2"> Jay Idzes</label>
+                        <label><input type="checkbox" name="favourite" value="pemain3"> Calvin Verdonk</label>
+                        <label><input type="checkbox" name="favourite" value="pemain4"> Nathan Tjoe A On</label>
+                        <label><input type="checkbox" name="favourite" value="pemain1"> Ernando Ari</label>
+                        <label><input type="checkbox" name="favourite" value="pemain1"> Rizky Ridho</label>
+                        <label><input type="checkbox" name="favourite" value="pemain2"> Justin Hubner</label>
+                        <label><input type="checkbox" name="favourite" value="pemain3"> Asnawi Mangkualam</label>
+
+                    </div>
+                    <div>
+                        <label><input type="checkbox" name="favourite" value="pemain4"> Marselino Ferdinan</label>
+                        <label><input type="checkbox" name="favourite" value="pemain1"> Ragnar Oratmangoen</label>
+                        <label><input type="checkbox" name="favourite" value="pemain1"> Rafael Struick</label>
+                        <label><input type="checkbox" name="favourite" value="pemain2"> Adi Satryo</label>
+                        <label><input type="checkbox" name="favourite" value="pemain3"> Nadeo Argawinata</label>
+                        <label><input type="checkbox" name="favourite" value="pemain4"> Yakob Sayuri</label>
+                        <label><input type="checkbox" name="favourite" value="pemain1"> Sandy Walsh</label>
+                        <label><input type="checkbox" name="favourite" value="pemain1"> Muhammad Ferrari</label>
+                    </div>
+                    <div>
+                        <label><input type="checkbox" name="favourite" value="pemain2"> Pratama Arhan</label>
+                        <label><input type="checkbox" name="favourite" value="pemain3"> Ricky Kambuaya</label>
+                        <label><input type="checkbox" name="favourite" value="pemain4"> Shayne Pattynama</label>
+                        <label><input type="checkbox" name="favourite" value="pemain1"> Ivar Jenner</label>
+                        <label><input type="checkbox" name="favourite" value="pemain1"> Egy Maulana Vikri</label>
+                        <label><input type="checkbox" name="favourite" value="pemain2"> Malik Risaldi</label>
+                        <label><input type="checkbox" name="favourite" value="pemain3"> Dimas Drajad</label>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="comments">Berikan saran dan kritik untuk Timnas Indonesia</label>
+                <textarea id="comments" name="comments" rows="4"></textarea>
+            </div>
+            <div class="form-group">
+                <button type="submit">Kirim Ulasan</button>
+            </div>
+        </form>
+
+    </section>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="Tentang.js"></script>
+</body>
+</html>
